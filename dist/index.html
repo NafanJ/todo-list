@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3>Home</h3>
+        </div>
+        <div class="profile-section">
+            <a href="personal-info.html">
+              <img src="../src/assets/img/profilepicture.png" alt="User Profile" class="profile-image" id="profile-image">
+            </a>
+          </div>          
+    </header>
+    <main>
+        <section class="welcome-section">
+            <button onclick="location.href='signup.html';">Get Started</button>
+            <h1>Get Started</h1>
+            <p>Organize your tasks efficiently and simply.</p>
+        </section>
+
+        <section class="todo-section">
+            <h2>My Tasks</h2>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Add a new task..." required>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 To-Do List Website</p>
+    </footer>
+    <script src="bundle.js"></script>
+</body>
+</html>
