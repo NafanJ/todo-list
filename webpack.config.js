@@ -28,6 +28,6 @@ module.exports = {
         static: {
             directory: path.join(__dirname, 'dist'),
         },
-        open: true, // This will open your default browser after the server starts
+        open: true,
     },
 };
