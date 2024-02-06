@@ -33,10 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const li = document.createElement('li');
         li.textContent = task;
 
-        const completeButton = document.createElement('button');
-        completeButton.textContent = 'Finished';
-        li.appendChild(completeButton);
-
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete';
         li.appendChild(deleteButton);
