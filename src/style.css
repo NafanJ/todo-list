@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -22,34 +21,41 @@ nav ul li a {
     color: #333;
 }
 
-.logo{
-    padding-left: 1rem;
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo {
     color: #02a7f8;
 }
 
 .profile-section {
-    position: absolute;
-    top: 10px; /* Adjust as necessary */
-    right: 10px; /* Adjust as necessary */
-    height: 50px; /* Adjust based on the size of the profile image */
-  }
-  
-  .profile-image {
+    height: 50px;
+}
+
+.profile-image {
     height: 100%;
-    border-radius: 50%; /* Makes the image round */
-    border: 2px solid var(--light-teal-blue); /* Optional: adds a border using a CSS variable for color */
+    border-radius: 50%;
+    /* Makes the image round */
+    border: 2px solid var(--light-teal-blue);
+    /* Optional: adds a border using a CSS variable for color */
     cursor: pointer;
-    object-fit: cover; /* Ensures the image is not distorted */
-  }
-  
-  /* Styles for larger screens */
-  @media (min-width: 768px) {
+    object-fit: cover;
+    /* Ensures the image is not distorted */
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
     .profile-section {
-      top: 20px; /* Adjust as necessary */
-      right: 20px; /* Adjust as necessary */
+        top: 20px;
+        /* Adjust as necessary */
+        right: 20px;
+        /* Adjust as necessary */
     }
-  }
-  
+}
+
 
 .welcome-section {
     text-align: center;
@@ -86,6 +92,16 @@ footer {
     border-radius: 8px;
 }
 
+#task-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
 #task-list li {
     margin: 10px 0;
     padding: 10px;
@@ -93,6 +109,10 @@ footer {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+#task-list li:hover {
+    background-color: #f0f0f0;
 }
 
 #task-list li.completed {
